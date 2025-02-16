@@ -6,5 +6,5 @@ class Book (models.Model):
     author = models.CharField (max_length=40)
     date_added = models.DateTimeField (auto_now_add=True)
 
-def __str__ (self):
-    return f'{self.book_title}, {self.author}, {self.date_added}'
+    def __str__ (self):
+        return f'{self.book_title}, {self.author}'
